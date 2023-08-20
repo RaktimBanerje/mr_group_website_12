@@ -1,0 +1,693 @@
+/* Hide scrollbar for Chrome, Safari and Opera */
+body::-webkit-scrollbar {
+    display: none;
+}
+  
+  /* Hide scrollbar for IE, Edge and Firefox */
+body{
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    font-family: 'Poppins', sans-serif;
+    color: black;
+}
+
+p {
+    color: #737373;
+    font-size: 14px;
+    line-height: 27px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.title {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 3rem;
+}
+
+.title-1 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    color: #3BA5FD;
+    font-size: 2.5rem;
+}
+
+.title-2 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    color: #8E0E0E;
+    font-size: 2.5rem;
+}
+
+.title-3 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    color: #3BA5FD;
+}
+
+
+.title-4 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    color: #8E0E0E;
+}
+
+@media (max-width:480px) {
+    .title {
+        font-family: 'Poppins', sans-serif;
+        font-weight: 700;
+        font-size: 2rem;
+    }
+    
+    .title-1 {
+        font-family: 'Poppins', sans-serif;
+        font-weight: 700;
+        color: #3BA5FD;
+        font-size: 1.75rem;
+    }
+    
+    .title-2 {
+        font-family: 'Poppins', sans-serif;
+        font-weight: 700;
+        color: #8E0E0E;
+        font-size: 1.75rem;
+    }
+}
+
+.mr-button {
+    border: 0;
+    padding: 13px 45px;
+}
+
+.button-1 {
+    background-color: #0068B2;
+    color: white;
+    border-radius: 15px 0px 0px 0px;
+    transition: 0.4s;
+}
+
+.button-1:hover {
+    background-color: #0068b2d8;
+    color: white;
+    transition: 0.4s;
+}
+
+.button-2 {
+    background-color: #8E0E0E;
+    color: white;
+    border-radius: 0px 15px 0px 0px;
+    transition: 0.4s;
+}
+
+.button-2:hover {
+    background-color: #8e0e0edc;
+    color: white;
+    transition: 0.4s;
+}
+
+.mr-section {
+    padding: 30px 0px;
+}
+
+.bg-1 {
+    background-color: #00AFD7;
+    background-position: bottom left;
+    background-size: cover;
+    border-radius: 0px 200px 200px 120px;
+}
+
+.bg-2 {
+    background-image: url('images/bg-2.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    /* z-index: -100; */
+}
+
+@media (max-width:480px) {
+    .mr-section {
+        padding: 30px 15px;
+    }
+
+    .title {
+        text-align: center;
+    }
+}
+
+/* Top Bar */
+.top {
+    background-color: transparent;
+    display: none;
+    transition: 0.2s;
+}
+
+.top i {
+    color: white;
+    margin-right: 10px;
+    font-size: 20px !important;
+}
+
+@media (min-width:780px) {
+    .top  {
+        display: block;
+        transition: 0.2s;
+    }
+}
+
+/* Header CSS */
+.header {
+    background: transparent;
+}
+
+.header .nav-bar {
+    background-color: white;
+}
+
+.header .logo {
+    width: 300px;
+}
+
+.header .nav {
+    justify-content: center;
+    align-items: center;
+}
+
+.header .nav p {
+    line-height: 20px;
+    margin-bottom: 0px;
+    color: #19265C;
+    font-size: 17px;
+    transition: 0.2s;
+}
+
+.header .nav-bar .nav p:hover {
+    color: #8E0E0E;
+    transition: 0.2s;
+}
+
+.header a {
+    color: #19265C;
+    text-decoration: none;
+}
+
+.header .button-2 {
+    border-radius: 0px;
+}
+
+
+
+@media (max-width:480px) {
+   .header .button-1 {
+        width: 100% !important;
+   }
+
+   .header .button-2 {
+        width: 100% !important;
+        height: 70px;
+        border-radius: 8px;
+   }
+
+   .header .logo {
+        height: 80px;
+        width: auto !important;
+    }
+}
+
+/* Banner CSS */
+.banner {
+    padding-top: 180px;
+    padding-bottom: 50px;
+    background-image: url('images/banner.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 850px;
+    position: relative;
+    /* margin-top: 100px; */
+}
+
+.banner .card-form {
+    background-color: rgba(90, 215, 232, 0.7);
+    padding: 20px 20px;
+    border:0;
+    backdrop-filter: blur(8px);
+    z-index: 1;
+    border-radius: 35px;
+}
+
+.banner label {
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    margin-bottom: 9px;
+    margin-bottom: 9px;
+}
+
+.banner .mr-input{
+    height: 50px;
+    background-color: #FFFFFF;
+    border-radius: 13px;
+}
+
+@media (max-width:480px) {
+    .banner {
+        padding-top: 100px;
+        height: fit-content;
+    }
+
+    .banner .content {
+        margin-top: 40px;
+        text-align: center;
+    }
+}
+
+/* Director */
+.director {
+    background-color: #D9D9D9;
+}
+
+@media (max-width:480px) {
+    .director {
+        background-color: white;
+    }
+}
+
+.director p {
+    text-align: justify;
+}
+
+/* Course */
+.course .single-course {
+    background-color: #3D3D3D;
+    padding: 20px;
+    height: 400px;
+}
+
+.course .single-course p {
+    font-size: 14px;
+    text-align: left;
+}
+
+.course img {
+    height: 100%;
+}
+
+/* Blog */
+.blog .blog-title {
+    font-family: 'Poppins', sans-serif;
+    color: #19265C;
+    font-weight: 700;
+}
+
+.blog-description {
+    font-size: 14px;
+    line-height: 25px;
+}
+
+.blog-time {
+    background-color: #0068B2;
+    padding: 10px 12px;
+    border-radius: 0px 0px 30px 0px;
+    text-align: center;
+    display: inline-block;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    margin-left: 10px;
+    margin-top: -30px;
+}
+
+/* Target */
+.target {
+    background-image: url('images/bg-1.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+/* Our Recognize */
+.partner-wrapper {
+    width: 100%;
+    display: grid;
+    place-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.partner-track {
+    display: flex;
+    width: 100%;
+    animation: scroll 8s linear infinite alternate;
+}
+
+.partner {
+    /* height: 76px; */
+    width: 220px;
+    display: flex;
+    align-items: center;
+}
+
+.partner img {
+    height: 76px;
+    width: 200px;
+    display: flex;
+    align-items: center;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(calc(-100px * 7));
+    }
+}
+
+/* Brochure CSS */
+
+.brochure {
+    background-color: #D9D9D9;
+}
+
+.brochure-1 {
+    background: #8E0E0E;
+}
+
+/* Footer */
+footer {
+    background-color: #1F2128;
+}
+
+footer a {
+    color: #898686 !important;
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+footer a:hover {
+    color: #00AFD7 !important;
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+.contact-icon {
+    width: 80px;
+}
+
+.copyright {
+    background-color: #16181E;
+}
+
+.btn-icon {
+    height: 25px;
+    margin-right: 5px;
+}
+
+/* Form */
+.form {
+    background-color: #0068B2;
+    border-radius: 35px;
+    padding: 15px;
+}
+
+@media (max-width:480px) {
+    .form {
+        padding: 10px;
+    }
+}
+
+.form label {
+    color: white;
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+
+/* FAQs */
+.accordion-item {
+    margin-bottom: 19px;
+}
+
+.accordion-header {
+    background-color: var(--primary);
+    padding: 0px;
+    border-radius: 15px;
+    box-shadow: none;
+}
+
+.accordion-button {
+    padding-left: 0px;
+    padding-top: 0px;
+    padding-right: 10px;
+    padding-bottom: 0px;
+    background-color: #E2E1E1 !important;
+}
+
+.accordion-button:focus {
+    box-shadow: none;
+}
+
+.accordion-no {
+    background-color: #0068B2;
+    color: white;
+    padding: 10px 25px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    width: 66px;
+    min-height: 51px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.faq-question {
+    margin-left: 10px;
+    font-size: 13px;
+    color: #414141;
+}
+
+.accordion-button:not(.collapsed)::after,
+.accordion-button::after {
+    background-image: url('images/Vector-1.png');
+    height: 15px;
+    width: 15px;
+    background-size: cover;
+}
+
+/* Contact */
+.contact {
+    background-image: url('images/bg-2.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Notice */
+.notice .title-container{
+    background-color: #2D2D2D;
+    border-radius: 10px 0px 0px 0px;
+    padding: 15px;
+}
+
+.notice .notice-container{
+    background-color: #0068B2;
+    padding: 15px;
+}
+
+.notice .notice-container a {
+    color: white;
+}
+
+@media (max-width:480px) {
+    .notice .title-container{
+        border-radius: 10px 10px 0px 0px;
+    }
+}
+
+/* About */
+.about {
+    margin-top: 100px;
+}
+
+@media (max-width:480px) {
+    .about p {
+        text-align: justify;
+    }
+}
+
+/* Swiper */
+
+.swiper {
+    width: 100%;
+    height: 100%;
+    z-index: 1000;
+  }
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: var(--primary);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.swiper {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.swiper-pagination-bullet {
+    background-color: #FFFFFF;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+    background-color: #FFFFFF;
+    right: 10px;
+    padding: 21px;
+    border-radius: 100%;
+    color: black !important;
+    font-weight: bolder;
+    fill: black !important;
+    stroke: black !important;
+    /* border: 1px solid black; */
+    transition: 0.4s;
+}
+
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+    box-shadow: 0px 0px 20px 0px white;
+    transition: 0.4s;
+}
+
+.swiper-button-prev::after,
+.swiper-button-next::after {
+    font-size: 18px;
+    font-weight: bolder;
+}
+
+
+.whatsapp-button {
+    position: fixed;
+    bottom: 160px;
+    left: 15px;
+    z-index: 99;
+    background-color: #25d366;
+    border-radius: 50px;
+    color: #ffffff;
+    text-decoration: none;
+    width: 50px;
+    height: 50px;
+    font-size: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /*-webkit-box-shadow: 0px 0px 25px -6px rgba(0,0,0,1);*/
+    /*-moz-box-shadow: 0px 0px 25px -6px rgba(0,0,0,1);*/
+    /*box-shadow: 0px 0px 25px -6px rgba(0,0,0,1);*/
+    animation: effect 4s infinite ease-in;
+}
+
+.whatsapp-mobile-button {
+    position: fixed;
+    bottom: 45%;
+    right: 1px;
+    z-index: 99;
+    background-color: #25d366;
+    /* border-radius: 8px 22px 0px 8px; */
+    color: #ffffff;
+    text-decoration: none;
+    width: 50px;
+    height: 50px;
+    font-size: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /*-webkit-box-shadow: 0px 0px 25px -6px rgba(0,0,0,1);*/
+    /*-moz-box-shadow: 0px 0px 25px -6px rgba(0,0,0,1);*/
+    /*box-shadow: 0px 0px 25px -6px rgba(0,0,0,1);*/
+    /* animation: effect 4s infinite ease-in; */
+}
+
+.call-button {
+    position: fixed;
+    bottom: 100px;
+    left: 15px;
+    z-index: 99;
+    background-color: dodgerblue;
+    border-radius: 50px;
+    color: #ffffff;
+    text-decoration: none;
+    width: 50px;
+    height: 50px;
+    font-size: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /*-webkit-box-shadow: 0px 0px 25px -6px rgba(0,0,0,1);*/
+    /*-moz-box-shadow: 0px 0px 25px -6px rgba(0,0,0,1);*/
+    /*box-shadow: 0px 0px 25px -6px rgba(0,0,0,1);*/
+    animation: effect 4s infinite ease-in;
+}
+
+.enquiry-button {
+    position: fixed;
+    bottom: 40px;
+    left: 15px;
+    z-index: 99;
+    background-color: #dc3545;
+    border-radius: 50px;
+    color: #ffffff;
+    text-decoration: none;
+    width: 50px;
+    height: 50px;
+    font-size: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /*-webkit-box-shadow: 0px 0px 25px -6px rgba(0,0,0,1);*/
+    /*-moz-box-shadow: 0px 0px 25px -6px rgba(0,0,0,1);*/
+    /*box-shadow: 0px 0px 25px -6px rgba(0,0,0,1);*/
+    animation: effect 4s infinite ease-in;
+}
+
+@keyframes effect {
+
+    20%,
+    100% {
+        width: 50px;
+        height: 50px;
+        font-size: 30px;
+    }
+
+    0%,
+    10% {
+        width: 55px;
+        height: 55px;
+        font-size: 35px;
+    }
+
+    5% {
+        width: 50px;
+        height: 50px;
+        font-size: 30px;
+    }
+}
